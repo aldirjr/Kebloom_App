@@ -1,0 +1,2 @@
+rootProject.name='Kebloom App'
+include ':app'
