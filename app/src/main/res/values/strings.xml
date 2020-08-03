@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">Kebloom App</string>
-
+    <string name="forgotPassword"><u>password</u></string>
 </resources>

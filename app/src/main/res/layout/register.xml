@@ -65,7 +65,6 @@
         android:layout_marginStart="110dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/logo"
-        android:clipToOutline="true"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/elipse" />
@@ -144,15 +143,15 @@
         app:layout_constraintTop_toBottomOf="@+id/editText5" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/next"
         android:layout_width="190dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
-        android:background="#FF8B00"
         android:text="Next step"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"
+        android:background="@drawable/orange_button_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText6" />

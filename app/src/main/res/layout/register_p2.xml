@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -72,7 +71,6 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/Now_lets"
         app:layout_constraintStart_toEndOf="@+id/Now_lets"
-        app:layout_constraintTop="@id/elipse"
         app:layout_constraintTop_toTopOf="@+id/Now_lets" />
 
     <TextView
@@ -103,11 +101,11 @@
         app:layout_constraintTop_toBottomOf="@+id/store" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/next"
         android:layout_width="190dp"
         android:layout_height="50dp"
         android:layout_marginTop="30dp"
-        android:background="#FF8B00"
+        android:background="@drawable/orange_button_background"
         android:text="Next step"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
@@ -144,9 +142,9 @@
         android:id="@+id/imageView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
         app:srcCompat="@drawable/selection_green" />
 
@@ -155,16 +153,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/selection_yellow"
-        tools:layout_editor_absoluteX="78dp" />
+        app:srcCompat="@drawable/selection_yellow" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/choose"
         app:srcCompat="@drawable/selection_red" />
 
@@ -181,9 +180,10 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/choose"
-        app:srcCompat="@drawable/selection_orange"
-        tools:layout_editor_absoluteX="78dp" />
+        app:srcCompat="@drawable/selection_orange" />
 
     <EditText
         android:id="@+id/editText"
