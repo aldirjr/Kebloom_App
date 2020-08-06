@@ -8,6 +8,17 @@ import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
+    Button buttonLogin = findViewById(R.id.login);
+    public void loginClicked(View view) {
+        EditText email = findViewById(R.id.email);
+        EditText password = findViewById(R.id.password);
+
+        if (email.getText().toString().matches("") || password.getText().toString().matches("")) {
+            Toast.makeText(this, "A email and a password are required.", Toast.LENGTH_SHORT).show();
+        } else {
+            //Code for creating the user
+        }
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
